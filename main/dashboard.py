@@ -2,9 +2,9 @@ import main
 import PySimpleGUI as sg
 from pyperclip import copy
 
-font = 'Courier_New'
+font = 'Ariel'
 
-sg.theme('DarkBlue')
+#sg.theme('DarkBlue')
 layout = [
     [sg.Text("Please Enter Your Username: ",font = font),sg.InputText(key='name',font=font)],
     [sg.Text("Length of Password:",font = font),sg.Slider(range = (5,50),
@@ -15,7 +15,7 @@ layout = [
     [sg.Submit(font=font),sg.Cancel(font=font)],
     [sg.Text(size=(50,1), key = '-OUTPUT0-',visible = False,font=font)],
     [sg.Text(size=(50,1), key = '-OUTPUT1-',visible = False,font=font)],
-    [sg.Text(size=(50,1), key = '-OUTPUT2-',visible = False,font=font,text_color= 'green2')],
+    [sg.Text(size=(50,1), key = '-OUTPUT2-',visible = False,text_color= 'green2')],
     [sg.Button('Copy to Clipboard',key = '_1_',visible = False,font=font)]
     ]
 

@@ -14,7 +14,7 @@ class User:
         
     def passGen(self,passlen):
         self.password = ''.join(choice(
-            printable[0:96]) for i in range(
+            printable[0:94]) for i in range(
                 passlen)) # string of random characters, symbols, and numbers at the length specified
         self.password = self.password[:-2]
         self.password += (choice(ascii_uppercase)) # add at least 1 capital letter
